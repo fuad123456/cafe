@@ -1,16 +1,24 @@
 body{
 	
 }
-main{
+.container{
+	
+	background-size: cover;
+	/* background-attachment: fixed; */
+	height: 100vh;
+}
+.main{
+	/* background: rgb(42,47,51); */
 	background-image: url(./assets/img/bg-1.jpg);
+	background-size: cover;
 	background-repeat: no-repeat;
 	font-family: 'Cinzel Decorative';
-	/* width: 100%; */
+	width: 100%;
 	height: 100vh;
-	background-size: contain;
-	background-attachment: fixed;
+
 }
 .main-name{
+	padding-top: 200px;
 	font-size: 64px;
 	font-family: 'Cinzel Decorative';
 	color: #fff;
@@ -23,7 +31,6 @@ main{
 	color: rgb(211, 92, 29);
 	font-weight: bold;
 	font-family: 'Cinzel Decorative';
-	text-align: center;
 	transition: all .2s ease-in-out
 }
 .menu-link:hover{
@@ -39,4 +46,30 @@ main{
 }
 .tac{
 	text-align: center;
+}
+@media all and (max-width: 768px) and (min-width: 500px){
+	.main{
+		background-image: url(./assets/img/bg-6.jpg) !important;
+		background-size: cover;
+	}
+	.main-name{
+		padding-top: 50px !important;
+		font-size: 56px;
+	}
+	.menu-link{
+		font-size: 32px;
+	}
+}
+@media all and (max-width: 500px) and (min-width: 320px){
+	.main{
+		background-image: url(./assets/img/bg-6.jpg) !important;
+		background-size: contain;
+	}
+	.main-name{
+		padding-top: 50px !important;
+		font-size: 48px;
+	}
+	.menu-link{
+		font-size: 24px;
+	}
 }
