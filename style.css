@@ -1,0 +1,42 @@
+body{
+	
+}
+main{
+	background-image: url(./assets/img/bg-1.jpg);
+	background-repeat: no-repeat;
+	font-family: 'Cinzel Decorative';
+	/* width: 100%; */
+	height: 100vh;
+	background-size: contain;
+	background-attachment: fixed;
+}
+.main-name{
+	font-size: 64px;
+	font-family: 'Cinzel Decorative';
+	color: #fff;
+}
+
+.menu-link{
+	font-size: 48px;
+	font-style: italic;
+	text-decoration: none;
+	color: rgb(211, 92, 29);
+	font-weight: bold;
+	font-family: 'Cinzel Decorative';
+	text-align: center;
+	transition: all .2s ease-in-out
+}
+.menu-link:hover{
+	font-size: 48px;
+	font-style: italic;
+	text-decoration: none;
+	
+	color: rgb(228, 198, 66);
+	font-weight: bold;
+	font-family: 'Cinzel Decorative';
+	text-align: center;
+	transition: all .2s ease-in-out
+}
+.tac{
+	text-align: center;
+}
