@@ -14,7 +14,7 @@ body{
 	background-repeat: no-repeat;
 	font-family: 'Cinzel Decorative';
 	width: 100%;
-	height: 100vh;
+	height: 120vh;
 
 }
 .main-name{
@@ -34,7 +34,7 @@ body{
 	transition: all .2s ease-in-out
 }
 .menu-link:hover{
-	font-size: 48px;
+	/* font-size: 48px; */
 	font-style: italic;
 	text-decoration: none;
 	
@@ -47,6 +47,10 @@ body{
 .tac{
 	text-align: center;
 }
+/* .footer{
+	background: url(./assets/img/sem-text.jpg);
+	height: 100px;
+} */
 @media all and (max-width: 768px) and (min-width: 500px){
 	.main{
 		background-image: url(./assets/img/bg-6.jpg) !important;
@@ -70,6 +74,9 @@ body{
 		font-size: 48px;
 	}
 	.menu-link{
+		font-size: 24px;
+	}
+	.menu-link:hover{
 		font-size: 24px;
 	}
 }
