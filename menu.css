@@ -1,94 +1,15 @@
+
 body{
 	
 }
-.container{
-	
-	background-size: cover;
-	/* background-attachment: fixed; */
-	height: 100vh;
-}
-.main{
-	/* background: rgb(42,47,51); */
-	background-image: url(./assets/img/bg-1.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	font-family: 'Cinzel Decorative';
-	width: 100%;
-	height: 120vh;
 
-}
-.main-name{
-	padding-top: 200px;
-	font-size: 64px;
-	font-family: 'Cinzel Decorative';
-	color: #fff;
-}
-
-.menu-link{
-	font-size: 48px;
-	font-style: italic;
-	text-decoration: none;
-	color: rgb(211, 92, 29);
-	font-weight: bold;
-	font-family: 'Cinzel Decorative';
-	transition: all .2s ease-in-out
-}
-.menu-link:hover{
-	/* font-size: 48px; */
-	font-style: italic;
-	text-decoration: none;
-	
-	color: rgb(228, 198, 66);
-	font-weight: bold;
-	font-family: 'Cinzel Decorative';
-	text-align: center;
-	transition: all .2s ease-in-out
-}
-.tac{
-	text-align: center;
-}
-/* .footer{
-	background: url(./assets/img/sem-text.jpg);
-	height: 100px;
-} */
-@media all and (max-width: 768px) and (min-width: 500px){
-	.main{
-		background-image: url(./assets/img/bg-6.jpg) !important;
-		background-size: cover;
-	}
-	.main-name{
-		padding-top: 50px !important;
-		font-size: 56px;
-	}
-	.menu-link{
-		font-size: 32px;
-	}
-}
-@media all and (max-width: 500px) and (min-width: 320px){
-	.main{
-		background-image: url(./assets/img/bg-6.jpg) !important;
-		background-size: contain;
-	}
-	.main-name{
-		padding-top: 50px !important;
-		font-size: 48px;
-	}
-	.menu-link{
-		font-size: 24px;
-	}
-	.menu-link:hover{
-		font-size: 24px;
-	}
-}
 .swiper {
 	width: 700px;
 	height: 180px;
   }
   .swiper-slide {
-	background: #fff;
 	text-align: center;
 	font-size: 18px;
-	background: #fff;
 	height: 300px;
 	width: 600px;
 	line-height: 300px;
@@ -102,13 +23,12 @@ body{
 		font-family: 'Roboto', sans-serif;
 		font-size: 16px;
 		color: #333;
-		background: #fafafa;
+		background-image: url("./assets/backgrounds/bgc.jpg");
 		scroll-behavior: smooth;
 	}
 	header{
 		height: 250px;
 		width: inherit;
-		background-color: #fff !important;
 		width: 100%;
 		/* margin: 0 auto; */
 	}
@@ -131,6 +51,7 @@ body{
 		font-size: 32px;
 		font-weight: bold;
 		margin-bottom: 20px;
+		color: #fff;
 	}
 	.dfc{
 		display: flex;
@@ -157,7 +78,12 @@ body{
 	/* Если где-то внутри слайдера будут изображения,
 	то нужно задать им pointer-events: none,
 	чтобы они не перетаскивались мышью */
-	
+	.mt150{
+		margin-top: 150px;
+	}
+	.bgc111{
+		background-color:rgb(156, 242, 242) !important;
+	}
 	.img-box{
 		width: 150px;
 		height: 100px;
@@ -212,7 +138,7 @@ body{
 	}
 	/* //////////////////////COL-CARDS */
 	.bgcw{
-		background: #fff;
+		/* background: #fff; */
 	}
 	img.col-img{
 		width: 6rem;
