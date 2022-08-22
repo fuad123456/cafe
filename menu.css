@@ -1,7 +1,4 @@
 
-body{
-	
-}
 
 .swiper {
 	width: 700px;
@@ -22,8 +19,7 @@ body{
 		padding: 0;
 		font-family: 'Roboto', sans-serif;
 		font-size: 16px;
-		color: #333;
-		background-image: url("./assets/backgrounds/bgc.jpg");
+		background-image: url("./assets/backgrounds/bg44.jpg");
 		scroll-behavior: smooth;
 	}
 	header{
@@ -82,7 +78,7 @@ body{
 		margin-top: 150px;
 	}
 	.bgc111{
-		background-color:rgb(156, 242, 242) !important;
+		background-color:rgb(224, 247, 247) !important;
 	}
 	.img-box{
 		width: 150px;
