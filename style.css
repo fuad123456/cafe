@@ -6,7 +6,7 @@
 } */
 .main{
 	/* background: rgb(42,47,51); */
-	background-image: url('./assets/backgrounds/bg44.jpg');
+	background-image: url('assets/backgrounds/bg44.jpg');
 	background-size: cover;
 	background-repeat: repeat;
 	font-family: 'Cinzel Decorative';
