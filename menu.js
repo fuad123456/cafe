@@ -1,9 +1,14 @@
-
+const popup= document.getElementById('popup')
+const popupBtn= document.getElementById('popupBtn')
+popupBtn.addEventListener('click',function(){
+	popup.classList.add('open')
+})
+document.getElementById('popup-close-btn').addEventListener('click',function(){popup.classList.remove('open')})
 const swiper = new Swiper('.swiper', {
 	// Optional parameters
 	direction: 'horizontal',
 	loop: true,
-    slidesPerView: 4,
+    slidesPerView: 6,
   	spaceBetween: 0,
 	// If we need pagination
 	pagination: {
@@ -13,17 +18,21 @@ const swiper = new Swiper('.swiper', {
 	breakpoints: {
 		// when window width is >= 320px
 		320: {
-		  slidesPerView: 4,
+		  slidesPerView: 2,
 		  spaceBetween: 0
 		},
 		// when window width is >= 480px
 		480: {
-		  slidesPerView: 3,
+		  slidesPerView: 4,
 		  spaceBetween: 30
 		},
 		// when window width is >= 640px
 		640: {
 		  slidesPerView: 4,
+		  spaceBetween: 40
+		},
+		950: {
+		  slidesPerView: 6,
 		  spaceBetween: 40
 		}
 	  }
