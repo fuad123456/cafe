@@ -1,4 +1,4 @@
-// import Swiper from '/modules/swiper-bundle.min.js';
+
 const swiper = new Swiper('.swiper', {
 	// Optional parameters
 	direction: 'horizontal',
@@ -13,8 +13,8 @@ const swiper = new Swiper('.swiper', {
 	breakpoints: {
 		// when window width is >= 320px
 		320: {
-		  slidesPerView: 2,
-		  spaceBetween: 20
+		  slidesPerView: 4,
+		  spaceBetween: 0
 		},
 		// when window width is >= 480px
 		480: {
@@ -53,9 +53,6 @@ function scrollTo(){
 		top: offsetPosition,
 		behavior: 'smooth'
 	});
-	// link.removeEventListener('click', scroll);
-	console.log(document.querySelectorAll('li[href^="#"').length);
-	// link.removeEventListener('mouseup', d);
 }
 function scroll(){
 	allLinks.forEach(link => {
@@ -63,5 +60,3 @@ function scroll(){
 	});
 }
 scroll()
-
-// slider.addEventListener('mousedown', scroll, {passive: true});

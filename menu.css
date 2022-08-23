@@ -1,4 +1,14 @@
-
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	background-image: url("./assets/backgrounds/bg44.jpg");
+	scroll-behavior: smooth;
+}
 
 .swiper {
 	width: 700px;
@@ -11,35 +21,7 @@
 	width: 600px;
 	line-height: 300px;
 	  }
-	  *{
-		box-sizing: border-box;
-	}
-	body{
-		margin: 0;
-		padding: 0;
-		font-family: 'Roboto', sans-serif;
-		font-size: 16px;
-		background-image: url("./assets/backgrounds/bg44.jpg");
-		scroll-behavior: smooth;
-	}
-	header{
-		height: 250px;
-		width: inherit;
-		width: 100%;
-		/* margin: 0 auto; */
-	}
-	
-	.header{
-		top: 0;
-		background: #fff;
-		box-shadow: 0 0 5px #ccc;
-		position: fixed;
-		z-index: 100;
-	}
-	.wrapper{
-		overflow: hidden;
-		height: 200px;
-	}
+
 	.section{
 		padding: 35px 0;
 	}
@@ -55,25 +37,13 @@
 		align-items: center;
 		justify-content: center;
 	}
-	.slider {
-	  position: relative;
-	  width: 40em;
-	  height: 200px;
-	
-	  /* Чтобы во время перетаскивания слайда ничего не выделить внутри него */
-	  user-select: none;
-	  /* Чтобы запретить скролл страницы, если мы начали двигать слайдер по оси X */
-	  touch-action: pan-y;
-	}
 	.price{
 		font-size: 1.5em;
 		font-weight: 700;
 		color: red;
 		font-family: 'Montez', cursive;
 	}
-	/* Если где-то внутри слайдера будут изображения,
-	то нужно задать им pointer-events: none,
-	чтобы они не перетаскивались мышью */
+
 	.mt150{
 		margin-top: 150px;
 	}
@@ -87,7 +57,6 @@
 		user-select: none;
 	}
 	.img-box img {
-	  /* width:auto; */
 	  width: 150px;
 	  height: 100px;
 	  object-fit: cover;
@@ -95,47 +64,16 @@
 	  border-radius: 20px;
 	  user-select: none;
 	}
-	.slider-list {
-	  height: 200px;
-	  overflow: hidden;
-	}
-	
-	.slider-list.grab {
-	  cursor: grab;
-	  height:200px;
-	}
-	
-	.slider-list.grabbing{
-	  cursor: grabbing;
-	  height:200px;
-	}
-	
-	.slider-track {
-	  display: flex;
-	  gap:.2em;
-	}
+
 	.title{
 		font-size: 1.2em;
 		height:120px;
-	}
-	.slide {
-	  width: 200px;
-	  height: 250px;
-	  /* Чтобы слайды не сжимались */
-	  flex-shrink: 0;
-	  /* Увеличиваем и центрируем цифру внутри слайда */
-	  display: flex;
-	  align-items: center;
-	  flex-direction: column;
-	  justify-content: center;
 	}
 	.swiper-slide{
 		height: 50px;
 	}
 	/* //////////////////////COL-CARDS */
-	.bgcw{
-		/* background: #fff; */
-	}
+
 	img.col-img{
 		width: 6rem;
 		height: 6rem;
