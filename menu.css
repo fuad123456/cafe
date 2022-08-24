@@ -40,7 +40,7 @@ body{
 		font-size: 1.5em;
 		font-weight: 700;
 		color: red;
-		font-family: 'Montez', cursive;
+		/* font-family: 'Montez', cursive; */
 	}
 	.slide-link{
 		height: 100px;
@@ -166,6 +166,7 @@ body{
 		width: 800px;
 		position: relative;
 		padding: 40px 10px;
+		border-radius: 10px;
 	}
 	.popup-btn{
 		border: none;
@@ -182,6 +183,12 @@ body{
 	table{
 		width: 100%;
 		font-family: 'Montez', cursive;
+	}
+	table th{
+		text-align: center;
+	}
+	table td{
+		text-align: center;
 	}
 	#popupBtn{
 		position: fixed;
@@ -250,7 +257,7 @@ body{
 		}
 		.img-box{
 			height: 110px;
-			width: 80px;
+			width: 100px;
 		}
 		.img-box img{
 			width: 80px;

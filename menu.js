@@ -23,8 +23,12 @@ const swiper = new Swiper('.swiper', {
 		},
 		// when window width is >= 480px
 		480: {
-		  slidesPerView: 3,
-		  spaceBetween: 30
+		  slidesPerView: 5,
+		  spaceBetween: 20
+		},
+		576: {
+		  slidesPerView: 4,
+		  spaceBetween: 20
 		},
 		// when window width is >= 640px
 		640: {
