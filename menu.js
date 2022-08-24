@@ -18,12 +18,12 @@ const swiper = new Swiper('.swiper', {
 	breakpoints: {
 		// when window width is >= 320px
 		320: {
-		  slidesPerView: 2,
+		  slidesPerView: 3,
 		  spaceBetween: 0
 		},
 		// when window width is >= 480px
 		480: {
-		  slidesPerView: 4,
+		  slidesPerView: 3,
 		  spaceBetween: 30
 		},
 		// when window width is >= 640px
@@ -69,3 +69,33 @@ function scroll(){
 	});
 }
 scroll()
+const foodBtnSub = document.querySelectorAll('.food-btn.bgcr')
+
+foodBtnSub.forEach(btn => {
+	let c=0
+	btn.addEventListener('click',function(){
+		let am= +btn.parentElement.nextElementSibling.innerHTML
+		console.log(am);
+		if (am>0){
+			am=+am-1
+		}else return
+		btn.parentElement.nextElementSibling.innerHTML=am
+	})
+
+})
+const foodBtnPlus = document.querySelectorAll('.food-btn.bgcg')
+
+foodBtnPlus.forEach(btn => {
+	let c=0
+	btn.addEventListener('click',function(){
+		let am= +btn.parentElement.previousElementSibling.innerHTML
+		console.log(am);
+		am=+am+1
+		btn.parentElement.previousElementSibling.innerHTML=am
+		console.log(1);
+	})
+
+})
+
+console.log(foodBtnPlus);
+

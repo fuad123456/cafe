@@ -1,36 +1,35 @@
-// import Swiper from './swiper-bundle.min.js';
-const swiper = new Swiper('.swiper', {
-	// Optional parameters
-	direction: 'horizontal',
-	loop: true,
-    slidesPerView: 4,
-  	spaceBetween: 0,
-	// If we need pagination
-	pagination: {
-	  el: '.swiper-pagination',
-	},
-  
-	breakpoints: {
-		// when window width is >= 320px
-		320: {
-		  slidesPerView: 2,
-		  spaceBetween: 20
-		},
-		// when window width is >= 480px
-		480: {
-		  slidesPerView: 3,
-		  spaceBetween: 30
-		},
-		// when window width is >= 640px
-		640: {
-		  slidesPerView: 4,
-		  spaceBetween: 40
-		}
-	  }
-  
-	// And if we need scrollbar
-	// scrollbar: {
-	//   el: '.swiper-scrollbar',
-	// },
-  });
-  const swiper1 = document.querySelector('.swiper').swiper;
+
+class Sub{
+	constructor(amount,price,btn){
+		this.amount=amount;
+		this.price=price;
+		this.am=document.createElement("div");
+	}
+	init(){
+		this.am.innerHTML=0
+
+	}
+	sub(el){
+		let btn =document.createElement(el);
+		btn.innerHTML='add'
+		btn.addEventListener('click', function(){
+			let r=0
+			r=r-1
+			console.log(this.am);
+		})
+		// btn.innerHTML+=this.amount
+		console.log(this.amount);
+		document.body.appendChild(btn)
+		document.body.appendChild(this.am)
+	}
+	plus(btn){
+		// let btn=document.querySelector('btn')
+		this.amount++
+		console.log(this.amount);
+		this.am.innerHTML=this.amount
+	}
+	
+}
+let sub =new Sub(2,1)
+sub.init()
+sub.sub('div')
