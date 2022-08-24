@@ -211,13 +211,21 @@ body{
 		font-family: 'Montez', cursive;
 	}
 	.popup-text{
-		max-height: 300px;
+		max-height: 400px;
 		overflow-y: scroll;
 	}
 	.img-popup{
 		border-radius:50%;
-		height: 100px;
-		width: 100px;
+		height: 50px;
+		width: 50px;
+		transition: all 0.3s ease-in-out; 
+	}
+	.img-popup:hover{
+		border-radius:50%;
+		height: 50px;
+		width: 50px;
+		transform: scale(1.8);
+		transition: all 0.3s ease-in-out; 
 	}
 	.fixed-bottom{
 		right: 20px !important;
