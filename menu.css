@@ -182,7 +182,9 @@ body{
 	}
 	table{
 		width: 100%;
+		max-height: 100px;
 		font-family: 'Montez', cursive;
+		overflow-y: hidden;
 	}
 	table th{
 		text-align: center;
@@ -207,6 +209,10 @@ body{
 		color: rgb(68, 23, 23);
 		font-weight: bold;
 		font-family: 'Montez', cursive;
+	}
+	.popup-text{
+		max-height: 300px;
+		overflow-y: scroll;
 	}
 	.img-popup{
 		border-radius:50%;
@@ -260,8 +266,8 @@ body{
 			width: 100px;
 		}
 		.img-box img{
-			width: 80px;
-			height: 90px;
+			width: 70px;
+			height: 80px;
 		}
 		.title{
 			font-size: 1em;
